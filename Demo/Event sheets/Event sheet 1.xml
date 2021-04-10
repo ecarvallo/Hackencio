@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="397869139180998">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="797055159039667" type="Parado" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="860069365256537" type="Parado">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856618004678713">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="643543712116758" type="Parado" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="311337249152946" type="Parado">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
