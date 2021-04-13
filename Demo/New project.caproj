@@ -10,6 +10,7 @@
     <unique-id>1f9h4lgujx592</unique-id>
     <saved-with-version>27900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -123,7 +124,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Caminar2.png" />
                 </animation>
-                <animation framecount="1" loop="0" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="5">
+                <animation framecount="1" loop="1" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Espalda.png">
                         <collision-poly>
                             <point x="0.25625" y="0" />
@@ -142,6 +143,9 @@
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
+                </animation>
+                <animation framecount="1" loop="1" name="Cought" pingpong="0" repeatcount="1" repeatto="0" sid="692219045735259" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Atrapado.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -308,6 +312,24 @@
         <object-type name="Gamepad" sid="103306805080571">
             <plugin id="gamepad" />
         </object-type>
+        <object-type name="Audio" sid="797179450085977">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Sprite" sid="992771816627424">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="673066929366332" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\MP1-1.png.png">
+                        <collision-poly>
+                            <point x="0.15" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.14375" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -323,8 +345,24 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="11">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="Mr Robot Main Theme Fixed and Extended.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">

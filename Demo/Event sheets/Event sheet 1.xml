@@ -27,17 +27,13 @@
         </event-block>
         <event-block sid="183378350999501">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="152930183452180" type="Parado">
+                <condition id="1" name="Is overlapping another object" sid="152930183452180" type="Parado">
                     <param id="0" name="Object">Consola</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="4" name="Set animation" sid="571475925026685" type="Parado">
                     <param id="0" name="Animation">&quot;Hack1&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-                <action id="4" name="Set animation" sid="180407214823874" type="Puerta3">
-                    <param id="0" name="Animation">&quot;Abierto&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -75,6 +71,60 @@
             <actions>
                 <action id="4" name="Set animation" sid="989457067871467" type="Parado">
                     <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="685867950017160">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="322718888169755" type="Keyboard">
+                    <param id="0" name="Key">77</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="601807249833385" type="Audio">
+                    <param id="0" name="Audio file">Mr Robot Main Theme Fixed and Extended</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="791437361024511">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="991776786272146" type="Parado">
+                    <param id="0" name="Object">Escritorio</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="888307477128918" type="Puerta3">
+                    <param id="0" name="Animation">&quot;Cerrado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="216869545859435">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="996085865147980" type="Parado">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="483479381633156" type="Parado">
+                    <param id="0" name="Animation">&quot;Cought&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="244284920767880">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="728568502408319" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="707421684406264" type="Puerta3">
+                    <param id="0" name="Animation">&quot;Abierto&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
