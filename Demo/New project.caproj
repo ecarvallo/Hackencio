@@ -85,6 +85,11 @@
         </object-type>
         <object-type name="Puerta" sid="358378615510717">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="464581549825380">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Tiles\Tiles3.png" />
         </object-type>
         <object-type name="Parado" sid="374702039725878">
@@ -96,12 +101,36 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="536302044221760" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png">
+                        <collision-poly>
+                            <point x="0.15" y="0" />
+                            <point x="0.89375" y="0" />
+                            <point x="0.89375" y="1" />
+                            <point x="0.14375" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="690400586936758" speed="8">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Camina1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Camina1.png">
+                        <collision-poly>
+                            <point x="0.13125" y="0" />
+                            <point x="0.90625" y="0" />
+                            <point x="0.9125" y="1" />
+                            <point x="0.1375" y="1" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Caminar2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Espalda.png">
+                        <collision-poly>
+                            <point x="0.25625" y="0" />
+                            <point x="0.775" y="0" />
+                            <point x="0.775" y="1" />
+                            <point x="0.25" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -144,6 +173,126 @@
         </object-type>
         <object-type name="Keyboard" sid="226036048500897">
             <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="421832577514290">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\DA0056LA\Downloads\Door.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="496232414820827">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-1.png.png" />
+        </object-type>
+        <object-type name="Parado2" sid="147814895385395">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="410049948158953">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Stand" pingpong="0" repeatcount="1" repeatto="0" sid="161998027241784" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
+                </animation>
+                <animation framecount="3" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="398236992090232" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Camina1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Caminar2.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="456218790207769" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Espalda.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.075" />
+                            <point x="0.725" y="0.275" />
+                            <point x="0.75" y="0.5" />
+                            <point x="0.7" y="0.7" />
+                            <point x="0.5" y="0.975" />
+                            <point x="0.275" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Puerta2" sid="261696195774074">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="524649347279651">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Cerrada" pingpong="0" repeatcount="1" repeatto="0" sid="191260473842247" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-1.png.png">
+                        <collision-poly>
+                            <point x="0.286458" y="0" />
+                            <point x="0.744792" y="0" />
+                            <point x="0.744792" y="0.994792" />
+                            <point x="0.286458" y="0.989583" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Abrir" pingpong="0" repeatcount="1" repeatto="0" sid="741216804027038" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-1.png.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-2.png.png">
+                        <collision-poly>
+                            <point x="0.276042" y="1.58325e-008" />
+                            <point x="0.744791" y="0" />
+                            <point x="0.744792" y="0.984375" />
+                            <point x="0.276042" y="0.984375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Puerta3" sid="448847702016770">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="122800973620784">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Cerrado" pingpong="0" repeatcount="1" repeatto="0" sid="784042061375605" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-1.png.png">
+                        <collision-poly>
+                            <point x="0.286458" y="0" />
+                            <point x="0.755209" y="0" />
+                            <point x="0.75" y="1" />
+                            <point x="0.28125" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Abierto" pingpong="0" repeatcount="1" repeatto="0" sid="935120189833515" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-2.png.png">
+                        <collision-poly>
+                            <point x="0.28125" y="0" />
+                            <point x="0.75" y="0" />
+                            <point x="0.75" y="0.34375" />
+                            <point x="0.286458" y="0.34375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Consola" sid="481193039209990">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316356103813952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Tiles 2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Piso2" sid="779381544657836">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="774583760476496">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="283818110424635" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Tiles\Tiles1.png" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

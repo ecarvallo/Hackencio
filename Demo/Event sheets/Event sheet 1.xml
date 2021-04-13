@@ -25,5 +25,33 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="183378350999501">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="152930183452180" type="Parado">
+                    <param id="0" name="Object">Consola</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="571475925026685" type="Parado">
+                    <param id="0" name="Animation">&quot;Hack1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="180407214823874" type="Puerta3">
+                    <param id="0" name="Animation">&quot;Abierto&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="926518714287340">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="471437911764506" type="Parado" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="113864945511338" type="Parado">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
