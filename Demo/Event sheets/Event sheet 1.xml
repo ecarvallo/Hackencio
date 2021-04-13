@@ -53,5 +53,31 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="874126104151448">
+            <conditions>
+                <condition id="2" name="Key is down" sid="267846805559675" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="135941440146146" type="Parado">
+                    <param id="0" name="Animation">&quot;Crouch&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="799526627672808">
+            <conditions>
+                <condition id="3" name="On key released" sid="419849436492009" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="989457067871467" type="Parado">
+                    <param id="0" name="Animation">&quot;Stand&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
