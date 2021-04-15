@@ -125,7 +125,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Caminar2.png" />
                 </animation>
-                <animation framecount="1" loop="1" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="1">
+                <animation framecount="1" loop="0" name="Hack1" pingpong="0" repeatcount="3" repeatto="0" sid="357350391169163" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Espalda.png">
                         <collision-poly>
                             <point x="0.25625" y="0" />
@@ -145,7 +145,7 @@
                         </collision-poly>
                     </frame>
                 </animation>
-                <animation framecount="1" loop="1" name="Cought" pingpong="0" repeatcount="1" repeatto="0" sid="692219045735259" speed="5">
+                <animation framecount="1" loop="0" name="Cought" pingpong="0" repeatcount="3" repeatto="0" sid="692219045735259" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Atrapado.png" />
                 </animation>
             </animation-folder>
@@ -270,10 +270,10 @@
                 <animation framecount="1" loop="0" name="Cerrado" pingpong="0" repeatcount="1" repeatto="0" sid="784042061375605" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Door-1.png.png">
                         <collision-poly>
-                            <point x="0.286458" y="0" />
-                            <point x="0.755209" y="0" />
-                            <point x="0.75" y="1" />
-                            <point x="0.28125" y="1" />
+                            <point x="0.283854" y="0" />
+                            <point x="0.752605" y="0" />
+                            <point x="0.752604" y="1" />
+                            <point x="0.283854" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -283,7 +283,7 @@
                             <point x="0.28125" y="0" />
                             <point x="0.75" y="0" />
                             <point x="0.75" y="0.34375" />
-                            <point x="0.286458" y="0.34375" />
+                            <point x="0.28125" y="0.341146" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -293,7 +293,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="316356103813952" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Tiles 2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\Tiles 2.png">
+                        <collision-poly>
+                            <point x="0.164063" y="0.0859375" />
+                            <point x="0.835938" y="0.0859375" />
+                            <point x="0.835938" y="0.90625" />
+                            <point x="0.164063" y="0.90625" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -403,6 +410,14 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424535030713455" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="548360232217880">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="996496435751778" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\4052ca52ac757f7870cf61118d76c65f-metal-office-desk-clipart-by-vexels.png" />
                 </animation>
             </animation-folder>
         </object-type>
