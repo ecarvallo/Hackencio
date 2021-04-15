@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -124,7 +125,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Parado.png" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\myassets\Player\Caminar2.png" />
                 </animation>
-                <animation framecount="1" loop="1" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="5">
+                <animation framecount="1" loop="1" name="Hack1" pingpong="0" repeatcount="1" repeatto="0" sid="357350391169163" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Player\Espalda.png">
                         <collision-poly>
                             <point x="0.25625" y="0" />
@@ -330,6 +331,81 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite2" sid="373513436886353">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="991125582117188" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\minigame1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="116015728896644">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="958768961197107" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\DA0056LA\Documents\Universidad\2021\Primer Semestre\TE2\[PH] Hackencio\git\Hackencio\myassets\Tiles\button1.png">
+                        <collision-poly>
+                            <point x="0.0378788" y="0.257576" />
+                            <point x="1" y="0.257576" />
+                            <point x="1" y="0.727273" />
+                            <point x="0.030303" y="0.727273" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="985346262565461">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="EndHack" sid="749913948187083">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite4" sid="873389835939515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="655595725450577" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="638191595736862">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="115192589232848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="614592070705663">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="177101924820595" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="118243577324032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424535030713455" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -359,6 +435,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="14" />
     </global-instances>
     <sounds-folder>
         <file name="Mr Robot Main Theme Fixed and Extended.ogg" />

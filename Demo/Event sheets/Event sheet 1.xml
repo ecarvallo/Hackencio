@@ -3,6 +3,19 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <event-block sid="183378350999501">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="152930183452180" type="Parado">
+                    <param id="0" name="Object">Consola</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="571475925026685" type="Parado">
+                    <param id="0" name="Animation">&quot;Hack1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="397869139180998">
             <conditions>
                 <condition behavior="Platform" id="8" name="On moved" sid="797055159039667" type="Parado" />
@@ -21,19 +34,6 @@
             <actions>
                 <action id="4" name="Set animation" sid="311337249152946" type="Parado">
                     <param id="0" name="Animation">&quot;Stand&quot;</param>
-                    <param id="1" name="From">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="183378350999501">
-            <conditions>
-                <condition id="1" name="Is overlapping another object" sid="152930183452180" type="Parado">
-                    <param id="0" name="Object">Consola</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="4" name="Set animation" sid="571475925026685" type="Parado">
-                    <param id="0" name="Animation">&quot;Hack1&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
             </actions>
@@ -123,9 +123,109 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="-1" name="Set X" sid="229650605125986" type="Sprite2">
+                    <param id="0" name="X">568</param>
+                </action>
+                <action id="-2" name="Set Y" sid="242064861037847" type="Sprite2">
+                    <param id="0" name="Y">303</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="689852754802279" type="Sprite2">
+                    <param id="0" name="Opacity">75</param>
+                </action>
+                <action id="-7" name="Set size" sid="296616292430232" type="Sprite2">
+                    <param id="0" name="Width">848</param>
+                    <param id="1" name="Height">550</param>
+                </action>
+                <action id="-1" name="Set X" sid="692585045938116" type="Sprite3">
+                    <param id="0" name="X">733</param>
+                </action>
+                <action id="-2" name="Set Y" sid="915380487858881" type="Sprite3">
+                    <param id="0" name="Y">418</param>
+                </action>
+                <action id="-1" name="Set X" sid="570390285662819" type="EndHack">
+                    <param id="0" name="X">649</param>
+                </action>
+                <action id="-2" name="Set Y" sid="116519740844831" type="EndHack">
+                    <param id="0" name="Y">394</param>
+                </action>
+                <action id="-1" name="Set X" sid="329103423441626" type="Sprite5">
+                    <param id="0" name="X">303</param>
+                </action>
+                <action id="-2" name="Set Y" sid="143762165288827" type="Sprite5">
+                    <param id="0" name="Y">199</param>
+                </action>
+                <action id="-2" name="Set Y" sid="138249301208995" type="Sprite6">
+                    <param id="0" name="Y">199</param>
+                </action>
+                <action id="-1" name="Set X" sid="456839695365111" type="Sprite7">
+                    <param id="0" name="X">539</param>
+                </action>
+                <action id="-2" name="Set Y" sid="896069553434607" type="Sprite7">
+                    <param id="0" name="Y">199</param>
+                </action>
+                <action id="-1" name="Set X" sid="894015506024127" type="Sprite6">
+                    <param id="0" name="X">785</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="857944384508265">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="979640298947491" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
                 <action id="4" name="Set animation" sid="707421684406264" type="Puerta3">
                     <param id="0" name="Animation">&quot;Abierto&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="955218113483928" type="Sprite3">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="721743455125612" type="Sprite2">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="720797514148797" type="EndHack">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="697937566944905" type="Sprite5">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="279560621716143" type="Sprite6">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="385967603430024" type="Sprite7">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="709988942359115">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="918585929349152" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-19" name="Rotate counter-clockwise" sid="870064962978158" type="Sprite5">
+                    <param id="0" name="Degrees">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="456277157334344">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="768674120585006" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-18" name="Rotate clockwise" sid="814525211640708" type="Sprite6">
+                    <param id="0" name="Degrees">90</param>
                 </action>
             </actions>
         </event-block>
